@@ -9,7 +9,7 @@ import jade.core.behaviours.CyclicBehaviour;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.UnreadableException;
 import java.awt.TextArea;
-public class V1 extends Agent {
+public class Vendeur extends Agent {
 
  //
 	static int x=1;
@@ -41,7 +41,7 @@ public class V1 extends Agent {
    //liste des acheteurs 
    ArrayList<Acheteur>ListeAcheteurs;
   
-   public V1() {  
+   public Vendeur() {  
    }
    
    protected void setup() { 
@@ -135,7 +135,7 @@ public class V1 extends Agent {
 		 
 		   }block();
 		 
-		 text.appendText("\n--------Je suis "+getLocalName()+" j'annonce le plus grand prix reçu ="+max+"---------");
+		 text.appendText("\n--------Je suis "+getLocalName()+" j'annonce le plus grand prix reÃ§u ="+max+"---------");
 		   System.out.println("max final= "+max);
 		     //tester si il y'a des agents qui veulent quitter 	     
 		    
@@ -212,14 +212,14 @@ public class V1 extends Agent {
 		     else { 
 		    	 
 		    	 //arreter l'enchere
-		    	 //si le dernier prix reçu par le vendeur > prix de reserve, le produit sera vendu 
+		    	 //si le dernier prix reÃ§u par le vendeur > prix de reserve, le produit sera vendu 
 		    	  int j=0;
 		    	  AID A = null;
 
 		    	   if(duree>=time) {
 		    		   //supprimer les achteurs 
-		    		   System.out.println("Le temps de l'enchère  est terminé.");
-		    		   text.appendText("\n----------------Le temps de l'enchère  est terminé.-------------------");
+		    		   System.out.println("Le temps de l'enchÃ¨re  est terminÃ©.");
+		    		   text.appendText("\n----------------Le temps de l'enchÃ¨re  est terminÃ©.-------------------");
 		    		   o[0]=null;
 		               o[1]=2;
 		               try {
@@ -240,8 +240,8 @@ public class V1 extends Agent {
 		    		   text.appendText("\n---------------Le gagnant est : "+LastAidMax.getLocalName()+" avec un prix de "+max+"-----------");
 			    	   System.out.println("le gagnant est "+LastAidMax.getLocalName()+" avec un prix de "+max);}
 	    		   else {
-	    			   text.appendText("\n-----------------Pas de gagnant pour cette enchère!---------------");
-	    			     System.out.println("Pas de gagnant pour cette enchère!");} 
+	    			   text.appendText("\n-----------------Pas de gagnant pour cette enchÃ¨re!---------------");
+	    			     System.out.println("Pas de gagnant pour cette enchÃ¨re!");} 
 		    	 
 		    	   doDelete();
 		    	
