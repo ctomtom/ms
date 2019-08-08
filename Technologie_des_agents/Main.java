@@ -62,7 +62,7 @@ public class Main extends JFrame {
 	 * Create the frame.
 	 */
 	public Main() {
-		setTitle("Application d'enchère");
+		setTitle("Application d'enchÃ¨re");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 917, 493);
 		contentPane = new JPanel();
@@ -112,7 +112,7 @@ public class Main extends JFrame {
 		panel_1.add(lblNewLabel_1);
 		
 		JComboBox ListProduit = new JComboBox();
-		ListProduit.setModel(new DefaultComboBoxModel(new String[] {"Clavier", "Ecran", "Souris", "Disque dur","Unité centrale"}));
+		ListProduit.setModel(new DefaultComboBoxModel(new String[] {"Clavier", "Ecran", "Souris", "Disque dur","UnitÃ© centrale"}));
 		ListProduit.setBounds(188, 45, 162, 20);
 		panel_1.add(ListProduit);
 		
@@ -190,7 +190,7 @@ public class Main extends JFrame {
 		panel_2.add(lblNombreAcheteurs);
 		lblNombreAcheteurs.setFont(new Font("Times New Roman", Font.BOLD, 12));
 		
-		JButton btnLancerEnch = new JButton("Lancer l'enchère!");
+		JButton btnLancerEnch = new JButton("Lancer l'enchÃ¨re!");
 		btnLancerEnch.setFont(new Font("Times New Roman", Font.BOLD, 12));
 		TextArea textArea = new TextArea();
 		textArea.setBounds(21, 264, 849, 160);
@@ -207,8 +207,8 @@ public class Main extends JFrame {
 				try {
 				
 					 for(Acheteur A:ListeAcheteurs) {
-							System.out.println("liste achteurs .."+ListeAcheteurs.get(j-1).PrixMax);
-							System.out.println("liste achteurs .."+ListeAcheteurs.get(j-1).Mise);
+							System.out.println("liste acheteurs .."+ListeAcheteurs.get(j-1).PrixMax);
+							System.out.println("liste acheteurs .."+ListeAcheteurs.get(j-1).Mise);
 							j++;
 						}
 					 Runtime rt=Runtime.instance();
