@@ -16,7 +16,7 @@ public class Acheteur extends Agent {
 	double Mise;
 	 double PrixMax;
 	 Produit E;
-	 V1 Vendeur;
+	 Vendeur Vendeur;
 	 int cont;
 	 TextArea text;
 	 Scanner in = new Scanner(System.in);
@@ -97,19 +97,19 @@ public class Acheteur extends Agent {
 					 
 					  try {
 						   if(E.getPrix()>PrixMax ||PrixNew>PrixMax) {
-							   System.out.println("Je suis "+getLocalName()+",j'ai reçu le produit "+E.getDesignation()+" avec le prix "+E.getPrix());
-								  text.appendText("\nJe suis "+getLocalName()+",j'ai reçu le produit "+E.getDesignation()+" avec le prix "+E.getPrix());
+							   System.out.println("Je suis "+getLocalName()+",j'ai reÃ§u le produit "+E.getDesignation()+" avec le prix "+E.getPrix());
+								  text.appendText("\nJe suis "+getLocalName()+",j'ai reÃ§u le produit "+E.getDesignation()+" avec le prix "+E.getPrix());
 								  
 						    	   o[0]=E;
 						    	   o[1]=-1;
 						    	   reply.setContentObject(o);
 							       reply.setLanguage("JavaSerialization");
-								   System.out.println(getLocalName()+" veut quitter car son prix seuil a été dépassé.");
+								   System.out.println(getLocalName()+" veut quitter car son prix seuil a Ã©tÃ© dÃ©passÃ©.");
 								   send (reply);
 						   }
 						   else if(PrixNew<=PrixMax){
-					    	  System.out.println("je suis "+getLocalName()+" j'ai reçu le produit "+E.getDesignation()+" avec le prix "+E.getPrix()+" et je propose le nouveau prix= "+PrixNew);
-							  text.appendText("\nje suis "+getLocalName()+" j'ai reçu le produit "+E.getDesignation()+" avec le prix "+E.getPrix()+" et je propose le nouveau prix= "+PrixNew);
+					    	  System.out.println("je suis "+getLocalName()+" j'ai reÃ§u le produit "+E.getDesignation()+" avec le prix "+E.getPrix()+" et je propose le nouveau prix= "+PrixNew);
+							  text.appendText("\nje suis "+getLocalName()+" j'ai reÃ§u le produit "+E.getDesignation()+" avec le prix "+E.getPrix()+" et je propose le nouveau prix= "+PrixNew);
 									
 					    	   E.setPrix(PrixNew);
 					    	   o[0]=E;
@@ -124,8 +124,8 @@ public class Acheteur extends Agent {
 						  } 
 					  }else  if(cont==1){
 						  
-						  text.appendText("\n****"+getLocalName()+" a quitté l'enchère car son prix seuil a été dépassé****");
-						  System.out.println(getLocalName()+" a quitté l'enchère car son prix seuil a été dépassé");doDelete();  }
+						  text.appendText("\n****"+getLocalName()+" a quittÃ© l'enchÃ¨re car son prix seuil a Ã©tÃ© dÃ©passÃ©****");
+						  System.out.println(getLocalName()+" a quittÃ© l'enchÃ¨re car son prix seuil a Ã©tÃ© dÃ©passÃ©");doDelete();  }
 					  
 					  } catch(UnreadableException e) {
 							   System.out.println(getLocalName()+"catched exception"+e.getMessage());
