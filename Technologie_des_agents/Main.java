@@ -231,7 +231,7 @@ public class Main extends JFrame {
 			        
 			         
 			        arg2[0]=prixT.getText(); arg2[1]=prixReserveT.getText(); arg2[2]=nbrAch; arg2[3]=textArea; arg2[4]=Designation; arg2[5]=time;
-			        AgentController ag2=mc.createNewAgent("Vendeur", "V1",arg2);
+			        AgentController ag2=mc.createNewAgent("Vendeur", "Vendeur",arg2);
 			        ag2.start();
 			        
 			        
