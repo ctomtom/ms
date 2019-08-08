@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="871.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Button layoutX="567.0" layoutY="93.0" mnemonicParsing="false" onAction="#execution" prefHeight="40.0" prefWidth="153.0" text="Execution" />
+      <TextArea fx:id="clauses" layoutX="79.0" layoutY="282.0" prefHeight="169.0" prefWidth="269.0" />
+      <TextArea fx:id="param" layoutX="80.0" layoutY="531.0" prefHeight="159.0" prefWidth="274.0" />
+      <TextArea fx:id="solution" layoutX="480.0" layoutY="262.0" prefHeight="49.0" prefWidth="307.0" />
+      <ChoiceBox fx:id="algo" layoutX="204.0" layoutY="77.0" prefWidth="150.0" stylesheets="@application.css" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="110.0" layoutY="234.0" prefHeight="38.0" prefWidth="204.0" text="Clauses" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="103.0" layoutY="491.0" prefHeight="38.0" prefWidth="204.0" text="Paramètres" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="69.0" prefHeight="38.0" prefWidth="147.0" text="Algorithme" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="554.0" layoutY="197.0" prefHeight="38.0" prefWidth="139.0" text="Solution" />
+      <ChoiceBox fx:id="esprech" layoutX="205.0" layoutY="116.0" prefWidth="150.0" stylesheets="@application.css" />
+      <ChoiceBox fx:id="instance" layoutX="206.0" layoutY="160.0" prefWidth="150.0" stylesheets="@application.css" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="110.0" prefHeight="38.0" prefWidth="204.0" text="Espace de recherche" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="154.0" prefHeight="38.0" prefWidth="204.0" text="Instance" />
+      <BarChart fx:id="graphe" layoutX="409.0" layoutY="413.0" prefHeight="325.0" prefWidth="441.0" stylesheets="@application.css" title="SAT des instances">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</Pane>
