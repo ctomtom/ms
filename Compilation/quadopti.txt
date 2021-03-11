@@ -1,0 +1,13 @@
+Numero      Operation   Operande1   Operande2   Resultat    
+1           Bounds      1           12                      
+2           ADEC        T                                   
+4           +           C14         2           T1          
+5           BGE         12          C11         T1          
+6           +           5           9           T2          
+7           +           5           T2          T3          
+9           -           5           2           T4          
+11          BR          4                                   
+12          BR          15                                  
+13          :=          B                       B           
+14          BR          16                                  
+15          BG          13          C10         1           

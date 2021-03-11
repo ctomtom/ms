@@ -1,0 +1,20 @@
+#calcul
+#boucle
+#tab
+programme G
+{integer :: J||C8||C6||C9||TEMP||C10||C11||C13||C14||C15||C16||C17;
+real :: A||B; real :: T[12]; 
+real :: D; 
+integer :: const C:=2;
+A:=B;
+
+//while(C11<C17)
+{
+execute C10:=1;
+if(C11>1)
+}//
+while(C11<C14+2){J:=5+5+9;C8:=5- 2;}
+execute B:=A;
+if(C10>1)
+//execute while(C11<C14+2){J:=5+5;C8:=5;} if(2>5)//
+}
